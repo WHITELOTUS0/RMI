@@ -1,4 +1,4 @@
-package Client;
+//package Client;
 import java.rmi.registry.Registry;
 import java.rmi.registry.LocateRegistry;
 
@@ -9,8 +9,9 @@ public class Client {
 
             Student x = (Student) registry.lookup("l");
             Student y = (Student) registry.lookup("m");
+        
+            System.out.println(x.getAge());
 
-            x.getAge();
             x.getName();
             y.getAge();
             y.getName();
