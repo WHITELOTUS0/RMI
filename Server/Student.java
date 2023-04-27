@@ -7,3 +7,5 @@ public interface Student extends Remote{
     public int getAge() throws RemoteException;
 
 }
+
+//Interface
