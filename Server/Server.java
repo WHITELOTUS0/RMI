@@ -5,8 +5,11 @@ import java.rmi.server.UnicastRemoteObject;
 public class Server {
     public static void main(String[] args) {
         try {
+            System.out.println("Starting Server");
 
             System.setProperty("java.rmi.server.hostname", "127.0.0.1");
+
+            System.out.println("...........");
 
             StudentImpl s1 = new StudentImpl("Shariff", 22);
             StudentImpl s2 = new StudentImpl("Glorry", 20);
@@ -18,6 +21,7 @@ public class Server {
 
             registry.rebind("l", uni1);
             registry.rebind("m", uni2);
+            System.out.println("Server Has Started");
 
         } catch (Exception e) {
             System.out.println("Server side Error" + e);
