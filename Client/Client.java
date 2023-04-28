@@ -10,11 +10,10 @@ public class Client {
             Student x = (Student) registry.lookup("l");
             Student y = (Student) registry.lookup("m");
         
-            System.out.println(x.getAge());
-
-            x.getName();
-            y.getAge();
-            y.getName();
+            System.out.println("shariff Age : "+ x.getAge());
+            System.out.println("Shariff Name : "+ x.getName());
+            System.out.println("Glorry Name : "+ y.getName());
+            System.out.println("Glorry Age :"+ y.getAge());
 
             
         }catch(Exception e){
