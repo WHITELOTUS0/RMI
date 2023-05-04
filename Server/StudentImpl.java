@@ -1,7 +1,6 @@
 
 import java.rmi.RemoteException;
 
-
 public class StudentImpl implements Student {
 
     public String name;
@@ -21,8 +20,7 @@ public class StudentImpl implements Student {
     }
 }
 
-//This is my code 
-//Interface Implementation
-//git diff 
-//power mode
-
+// This is my code
+// Interface Implementation
+// git diff
+// power mode
