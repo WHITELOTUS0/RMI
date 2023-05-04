@@ -6,7 +6,7 @@ public class Server {
 
     private static final int DELAY_TIME_MS = 500;
 
-    public static void IndeterminateDotProgressBar(){
+    public static void IndeterminateDotProgressBar() {
         int count = 0;
         while (true) {
             System.out.print(".");
@@ -17,15 +17,16 @@ public class Server {
             }
             count++;
             if (count == 10) {
-                System.out.print("\r");  // move cursor back to beginning of line
+                System.out.print("\r"); // move cursor back to beginning of line
                 for (int i = 0; i < 10; i++) {
-                    System.out.print(" ");  // overwrite dots with spaces
+                    System.out.print(" "); // overwrite dots with spaces
                 }
-                System.out.print("\r");  // move cursor back to beginning of line
+                System.out.print("\r"); // move cursor back to beginning of line
                 count = 0;
             }
         }
     }
+
     public static void main(String[] args) {
         try {
             System.out.println("Starting Server");
@@ -53,8 +54,8 @@ public class Server {
     }
 }
 
-//Server
-//fixed bugs
-//remote
-//method
-//invocation
+// Server
+// fixed bugs
+// remote
+// method
+// invocation
