@@ -56,3 +56,4 @@ public class Server {
 //Server
 //fixed bugs
 //remote
+//method
